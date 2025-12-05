@@ -121,7 +121,7 @@ func enhancedSplitNumber(n int, numDigits int) int {
 		allMatch := true
 		temp := n
 
-		for i := 0; i < numPartitions; i++ {
+		for range numPartitions {
 			currentPartition := temp % int(math.Pow(10, float64(partitionSize)))
 
 			if currentPartition != firstPartition {
