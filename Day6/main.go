@@ -9,6 +9,10 @@ import (
 )
 
 func main() {
+	partOne()
+}
+
+func partOne() {
 	// Open the file
 	file, err := os.Open("input.txt")
 	if err != nil {
@@ -77,7 +81,6 @@ func main() {
 	}
 
 	fmt.Printf("Total: %d\n", total)
-
 }
 
 func solve(n []int, operand string) int {
